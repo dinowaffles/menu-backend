@@ -1,4 +1,8 @@
 package com.example.menu.item;
 
-public class ItemRepository {
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface ItemRepository extends CrudRepository<Item, Long> {
 }
